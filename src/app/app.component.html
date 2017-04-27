@@ -1,3 +1,141 @@
-<h1>
-  {{title}}
-</h1>
+	<div class="container">
+		<div class="row">
+			<div class="col-md-6">
+			<ul class="headlinks-left">		
+				<li >0800 832 439</li>
+				<li >info@techexpozed.co.nz</li>
+			</ul>
+			</div>
+			<div class="col-md-6">
+			<ul class="headlinks">
+				<li>
+					<a [routerLink]="['/login']">Login / Register</a>
+				</li>
+				<li id="headlink-contact">
+					<a [routerLink]="['/contact']">Contact</a>
+				</li>
+				<li id="headlink-home">
+					<a href="/">Home</a>
+				</li>
+			</ul>
+		</div>
+		</div>
+		<div class="row">
+			<div class="col-md-5">
+				<a [routerLink]="['/home']">
+					<img id="techbroz-logo" src="http://techbroz.co.nz/images/logo.png">
+				</a>
+			</div>
+			<div class="col-md-6">
+				<div class="input-group srch-input">
+				    <input type="text" class="form-control"/>
+				    <span class="input-group-addon">
+				        <i class="fa fa-search"></i>
+				    </span>
+				</div>
+			</div>
+			<div class="col-md-1">
+				<img class="cart-icon" src="http://techbroz.co.nz/images/fullcartdark.png">
+			</div>
+		</div>
+	</div>
+	<div class="clearfix"></div>
+
+
+<nav class="navbar navbar-default">
+  <div class="container">
+   
+  <ul class="nav navbar-nav">
+      <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown">Accessories & Peripherals  <b class="caret"></b></a>
+              <ul class="dropdown-menu">
+                <li><a href="#">Adaptor</a></li>
+                <li><a href="#">Bluetooth</a></li>
+                 </ul>
+            	</li>
+           
+
+
+        <li><a href="#">Computers</a></li>
+      <li><a href="#">Networking</a></li>
+      <li><a href="#">PC Parts</a></li>
+      <li><a href="#">Printer</a></li>
+      <li><a href="#">Projector</a></li>
+      <li><a href="#">Security Camera & Systems</a></li>
+      <li><a href="#">Service parts</a></li>
+      <li><a href="#">Softwares</a></li>
+    </ul>
+  </div>
+</nav> 
+
+
+
+				 	
+
+
+				 	
+
+
+
+			
+
+
+<!--
+
+<nav class="navbar navbar-default">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <a class="navbar-brand" [routerLink]="['/home']">Company Name</a>
+    </div>
+  <ul class="nav navbar-nav">
+      <li role="presentation" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}"><a [routerLink]="['/home']">Home</a></li>
+  <li role="presentation" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}"><a [routerLink]="['/question']">Question</a></li>
+
+        <li><a href="#">Page 2</a></li>
+      <li><a href="#">Page 3</a></li>
+    </ul>
+  </div>
+</nav> -->
+<router-outlet></router-outlet>
+
+
+
+
+  <div class="container border-top-gray-line">
+    	<h2>Partners</h2>
+  	<div class="row">
+  		<div class="col-md-6">
+  			<h2>Techexpozed</h2>
+  			<div class="col-md-8">
+  				Tech Expozed is the umbrella brand for a family of specialised IT brands encompassing a wide range of IT specific products and services. Tech Expozed has a focus of becoming the most trusted and reliable IT company in Wellington and beyond. This is done by supporting NZ business with quality solutions which results in better outcomes for our customers.
+  			</div>
+  			<div class="col-md-2">
+  				<img src="http://techbroz.co.nz/images/cmp1.png">
+  			</div>
+  		</div>
+  		
+  		<div class="col-md-6">
+  			<h2>iKidZone</h2>
+  			<div class="col-md-8">
+  				Tech Expozed is the umbrella brand for a family of specialised IT brands encompassing a wide range of IT specific products and services. Tech Expozed has a focus of becoming the most trusted and reliable IT company in Wellington and beyond. This is done by supporting NZ business with quality solutions which results in better outcomes for our customers.
+  			</div>
+  			<div class="col-md-2">
+  				<img src="http://techbroz.co.nz/images/iKidZoneLogo1.png">
+  			</div>
+  		</div>
+  		
+  	</div>
+  </div>
+
+    <div class="container-fluid footer-bg">
+	    <div class="container"> 
+	    	<h2>Contact</h2>
+	    	<div class="contact-details">
+		    	T. 0800 832 439
+				info@techexpozed.co.nz
+			</div>
+			<div>
+			&copy; Techexpozed 2017
+			</div>
+		</div>
+    </div>
