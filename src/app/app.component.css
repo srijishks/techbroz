@@ -28,3 +28,33 @@
 		padding-top: 0%;
 	}
 }
+.headlinks{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    float: right;
+   }
+.headlinks li, .headlinks-left li {
+    float: left;
+    padding: 0 9px;
+    border-right: 1px solid #dccaca;
+    margin-top: 5px;
+}
+.headlinks li:last-child, .headlinks-left li:last-child {
+  border: none;
+}
+.border-top-bottom-gray-line{
+	border-top: 1px solid #dad5d5;
+	border-bottom: 1px solid #dad5d5;
+	margin: 1px 0;
+
+}
+.headlinks-left {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    float: left;
+    color: #96a006;
+}
