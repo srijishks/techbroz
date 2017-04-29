@@ -1,0 +1,71 @@
+<div class="container" >
+	<h1>Shopping Cart</h1>
+
+	<div class="col-md-6">
+	<h2>Billing Address</h2>
+	<label>&nbsp;</label>
+		<form>
+		  <div class="form-group">
+		    <label for="email">First name:</label>
+		    <input type="text" class="form-control" id="email">
+		  </div>
+		   <div class="form-group">
+		    <label for="email">Last name:</label>
+		    <input type="text" class="form-control" id="email">
+		  </div>
+		  <div class="form-group">
+		    <label for="email">Phone:</label>
+		    <input type="text" class="form-control" id="email">
+		  </div>
+		  <div class="form-group">
+		    <label for="email">email:</label>
+		    <input type="text" class="form-control" id="email">
+		  </div>
+		  <div class="form-group">
+		    <label for="pwd">Address:</label>
+		    <textarea class="form-control"></textarea>
+		  </div>
+		  <div class="form-group">
+		    <label for="email">Zip:</label>
+		    <input type="text" class="form-control" id="email">
+		  </div>
+
+		  
+		</form>
+	</div>
+
+	<div class="col-md-6">
+	<h2>Shipping Address</h2>
+	
+	 <label><input type="checkbox"> Same as Billing address</label>
+		<form>
+		  <div class="form-group">
+		    <label for="email">First name:</label>
+		    <input type="text" class="form-control" id="email">
+		  </div>
+		   <div class="form-group">
+		    <label for="email">Last name:</label>
+		    <input type="text" class="form-control" id="email">
+		  </div>
+		  <div class="form-group">
+		    <label for="email">Phone:</label>
+		    <input type="text" class="form-control" id="email">
+		  </div>
+		  <div class="form-group">
+		    <label for="email">email:</label>
+		    <input type="text" class="form-control" id="email">
+		  </div>
+		  <div class="form-group">
+		    <label for="pwd">Address:</label>
+		     <textarea class="form-control"></textarea>
+		  </div>
+		  <div class="form-group">
+		    <label for="email">Zip:</label>
+		    <input type="text" class="form-control" id="email">
+		  </div>
+		  <button type="submit" class="btn btn-default">Cancel</button>
+		  <div [routerLink]="['/order-confirm']"  class="btn btn-primary">Review & confirm</div>
+		</form>
+	</div>
+
+</div>

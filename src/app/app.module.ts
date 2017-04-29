@@ -6,12 +6,25 @@ import { HttpModule } from '@angular/http';
 
 import { AppComponent } from './app.component';
 import { HomeComponent } from './home/home.component';
+import { ListingsComponent } from './listings/listings.component';
+import { DetailsComponent } from './details/details.component';
+import { CartComponent } from './cart/cart.component';
+import { OrderReviewComponent } from './order-review/order-review.component';
+import { OrderConfirmComponent } from './order-confirm/order-confirm.component';
+import { OrderSuccessComponent } from './order-success/order-success.component';
 import { routing, appRoutingProviders }  from './app.routes';
+
 
 @NgModule({
   declarations: [
     AppComponent,
-    HomeComponent
+    HomeComponent,
+    ListingsComponent,
+    DetailsComponent,
+    CartComponent,
+    OrderReviewComponent,
+    OrderConfirmComponent,
+    OrderSuccessComponent
   ],
   imports: [
     BrowserModule,

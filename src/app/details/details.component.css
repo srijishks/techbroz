@@ -1,0 +1,13 @@
+.item-price{
+	font-size: 25px
+}
+.strike-pout-price{
+	vertical-align: bottom;
+    text-decoration: line-through;
+    font-size: 14px;
+    padding-top: 7px;
+}
+.border-bottom-gray-line{
+	border-bottom: 1px solid gray;
+	margin-top: 25px;
+}
