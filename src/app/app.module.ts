@@ -13,6 +13,7 @@ import { OrderReviewComponent } from './order-review/order-review.component';
 import { OrderConfirmComponent } from './order-confirm/order-confirm.component';
 import { OrderSuccessComponent } from './order-success/order-success.component';
 import { routing, appRoutingProviders }  from './app.routes';
+import { UrlrewritePipe,StripPipe } from './pipe/urlrewrite.pipe';
 
 
 @NgModule({
@@ -24,7 +25,9 @@ import { routing, appRoutingProviders }  from './app.routes';
     CartComponent,
     OrderReviewComponent,
     OrderConfirmComponent,
-    OrderSuccessComponent
+    OrderSuccessComponent,
+    UrlrewritePipe,
+    StripPipe
   ],
   imports: [
     BrowserModule,

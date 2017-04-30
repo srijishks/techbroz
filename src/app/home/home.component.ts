@@ -1,13 +1,19 @@
 import { Component, OnInit } from '@angular/core';
+import { ProductService } from '../service/product.service';
+import { Globals } from '../globals';
 
 @Component({
   selector: 'app-home',
   templateUrl: './home.component.html',
+  providers: [ Globals, ProductService ],
   styleUrls: ['./home.component.css']
 })
-export class HomeComponent implements OnInit {
 
-  constructor() { }
+export class HomeComponent implements OnInit {
+	data:any;
+	formvalue:any;
+	product:any;
+  constructor(private _productservice: ProductService, private globals: Globals) { }
 
   ngOnInit() {
 
@@ -18,8 +24,19 @@ export class HomeComponent implements OnInit {
 		currentSlide = (currentSlide+1)%slides.length;
 		slides[currentSlide].className = 'slide showing';
 	},2000);
+		
 
-	
+				this._productservice.selectproducts(this.formvalue)
+			      .subscribe(
+	                       product =>{
+	                       	this.product = product;
+	                       	this.data = this.product.data;
+	                       	console.log(this.product.data);
+	                       }	,
+	                        err => {
+	                            // Log errors if any
+	                            console.log(err);
+	                        });
 
   }
 

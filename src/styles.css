@@ -1,2 +1,15 @@
 /* You can add global styles to this file, and also import other style files */
 .mt-18-pr{margin-top: 18%; }
+.product-grid{
+	    cursor: pointer;
+    margin: 5px;
+    border: 1px solid #f5eeee;
+    text-align: center;
+}
+.itm-title{
+	font-size: 15px;
+	font-weight: bold;
+}
+.itm-desc{
+	font-size: 11px;
+}
