@@ -13,3 +13,20 @@
 .itm-desc{
 	font-size: 11px;
 }
+.itm-price{
+	font-size: 15px;
+	font-weight: bold;
+}
+.addcrt{
+    margin: 0 auto;
+	width: 89%;
+    height: 20px;
+    display: block;
+    background: url(./assets/images/atc2.png) no-repeat;
+    background-size: 96% 22px;
+}
+.addcrt-btn{
+	background-color: #936 !important;
+    color: #fff !important;
+    font-weight: bold;
+}

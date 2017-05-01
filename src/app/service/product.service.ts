@@ -27,11 +27,26 @@ export class ProductService {
 
 
     }
+    selectproductsbyid(id: number): Observable<Product> {
+      let body = {
+              "params": {
+                id: id
+              }
+            };
+        let bodyString = JSON.stringify(body);
+        let headers = new Headers({ 'Content-Type': 'application/json' });
+        let options = new RequestOptions({ headers: headers });
+        return this.http.post(this.globals.ApiUrl+"/selectproductsbyid", bodyString, options) 
+             //.map((res:Response) => res.json()) // ...and calling .json() on the response to return data
+             .map(this.extractData, bodyString)
+             .catch((error:any) => Observable.throw(error.json().error || 'Server error')); //...errors if any
+    }
 
 private extractData(res: Response ) {
     let body = res.json();
     let bodyparsed = JSON.parse(body);
-    // console.log(bodyparsed.data);
+    // console.log(bodyparsed.data[0].title);
+      // console.log(bodyparsed.data);
     return bodyparsed || { };
   }
 }

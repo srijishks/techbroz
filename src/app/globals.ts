@@ -4,10 +4,10 @@ Injectable()
 export class Globals{
 
 // ApiUrl = "http://sreejish.com/json/techborz";
-imageUrl = "http://techbroz.co.nz/images/";
+imageUrl = "http://localhost/techbroz.co.nz/images/";
 
 ApiUrl = "http://localhost/techbroz.co.nz/api/jsonp";
 
-AppUrl ="http://techbroz.co.nz";
+AppUrl ="http://localhost/techbroz.co.nz";
     
 }

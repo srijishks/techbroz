@@ -13,7 +13,8 @@ import { OrderReviewComponent } from './order-review/order-review.component';
 import { OrderConfirmComponent } from './order-confirm/order-confirm.component';
 import { OrderSuccessComponent } from './order-success/order-success.component';
 import { routing, appRoutingProviders }  from './app.routes';
-import { UrlrewritePipe,StripPipe } from './pipe/urlrewrite.pipe';
+// import { UrlrewritePipe,StripPipe } from './pipe/urlrewrite.pipe';
+import { UrlrewritePipe,StripPipe } from './pipe/common.pipe';
 
 
 @NgModule({
@@ -27,7 +28,7 @@ import { UrlrewritePipe,StripPipe } from './pipe/urlrewrite.pipe';
     OrderConfirmComponent,
     OrderSuccessComponent,
     UrlrewritePipe,
-    StripPipe
+    StripPipe,
   ],
   imports: [
     BrowserModule,
